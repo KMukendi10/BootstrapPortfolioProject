@@ -1,9 +1,8 @@
 /* ============================================================
-   PORTFOLIO — Kazadi Mukendi
+   PORTFOLIO — Alex Rivera
    Design tokens: ink-black + warm-white + electric-violet accent
    Typefaces: Playfair Display (display) + Inter (body)
-   ============================================================
-*/
+   ============================================================ */
 
 :root {
   --color-bg:       #F8F7F4;
@@ -11,9 +10,9 @@
   --color-dark:     #0F0E0C;
   --color-ink:      #1A1917;
   --color-muted:    #6B6860;
-  --color-accent:   #6C3FE8;
-  --color-accent-2: #A87BFF;
-  --color-label-bg: #EDE9FD;
+  --color-accent:   #6C3FE8;      /* electric violet */
+  --color-accent-2: #A87BFF;      /* lighter violet for hovers */
+  --color-label-bg: #EDE9FD;      /* pale violet for section labels */
   --color-badge-bg: #EDE9FD;
   --color-badge-txt:#4A1FBF;
   --color-hero-overlay: rgba(10, 8, 20, 0.68);
@@ -106,12 +105,10 @@ em { font-style: italic; color: var(--color-accent); }
 .hero-section {
   position: relative;
   min-height: 100dvh;
-  background-image:
-    radial-gradient(ellipse at 20% 60%, rgba(108,63,232,0.45) 0%, transparent 55%),
-    radial-gradient(ellipse at 80% 20%, rgba(168,123,255,0.35) 0%, transparent 50%),
-    linear-gradient(135deg, #0a0814 0%, #150d2e 50%, #0d1a3a 100%);
+  background-image: url('https://images.unsplash.com/photo-1518770660439-4636190af475?w=1920&q=80');
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
   color: #fff;
   overflow: hidden;
 }

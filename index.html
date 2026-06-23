@@ -1,81 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kazadi Mukendi | Portfolio</title>
-
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-
-  <!-- Bootstrap Icons -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
-
-  <!-- Custom CSS -->
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alex Rivera — Portfolio</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <a href="#main-content" class="skip-link">Skip to content</a>
+  <!-- Skip to content -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
 
-  <header>
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top portfolio-nav">
-      <div class="container">
-        <a class="navbar-brand fw-bold" href="#home">Portfolio</a>
-
-        <div class="navbar-nav ms-auto flex-row gap-3">
-          <a class="nav-link active" href="#home">Home</a>
-          <a class="nav-link" href="#about">About Me</a>
-          <a class="nav-link" href="#projects">Projects</a>
-          <a class="nav-link" href="#contact">Contact</a>
-        </div>
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top py-3" id="mainNav" aria-label="Primary navigation">
+    <div class="container">
+      <a class="navbar-brand fw-bold logo-text" href="#hero">&#60;AR/&#62;</a>
+      <button class="navbar-toggler border-0" type="button"
+              data-bs-toggle="collapse" data-bs-target="#navMenu"
+              aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navMenu">
+        <ul class="navbar-nav gap-1">
+          <li class="nav-item"><a class="nav-link active" href="#hero" aria-current="page">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
       </div>
-    </nav>
-  </header>
+    </div>
+  </nav>
 
   <main id="main-content">
 
-    <!-- Hero -->
-    <section id="home" class="hero-section">
-      <div class="hero-overlay">
-        <div class="container text-center hero-content">
-          <h1>I am Kazadi Mukendi</h1>
-          <p>Aspiring Full Stack Web Developer</p>
-        </div>
+    <!-- ===== HERO ===== -->
+    <header class="hero-section d-flex align-items-center justify-content-center text-center" id="hero">
+      <div class="hero-overlay"></div>
+      <div class="hero-content position-relative z-1">
+        <p class="hero-eyebrow text-uppercase letter-spaced mb-3">Welcome to my world</p>
+        <h1 class="hero-headline display-1 fw-black mb-3">I am <span class="hero-name">Alex Rivera</span>.</h1>
+        <p class="hero-sub fs-4 fw-light">Web Developer &amp; Entrepreneur</p>
+        <a href="#projects" class="btn btn-hero mt-4">View My Work <i class="bi bi-arrow-down ms-2"></i></a>
       </div>
-    </section>
+    </header>
 
-    <!-- About -->
-    <section id="about" class="section-padding">
-      <div class="container">
-        <div class="about-card">
-          <div class="row g-4 align-items-center">
+    <!-- ===== ABOUT ME ===== -->
+    <section class="about-section py-5" id="about" aria-labelledby="about-heading">
+      <div class="container py-4">
+        <div class="card about-card border-0 shadow-lg rounded-4 overflow-hidden">
+          <div class="row g-0">
 
-            <div class="col-md-5">
-              <img src="images/profile.jpg" alt="Profile photo of Kazadi Shadrack Mukendi" class="profile-img mb-3">
+            <!-- Left column -->
+            <div class="col-lg-4 about-left p-4 p-lg-5">
+              <div class="text-center mb-4">
+                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=300&fit=crop&crop=face"
+                     alt="Alex Rivera profile photo"
+                     class="profile-img rounded-circle mb-3" />
+                <h2 class="h5 fw-bold mb-0">Alex Rivera</h2>
+                <p class="text-muted small">Web Developer</p>
+              </div>
 
-              <p><strong>Name:</strong> Kazadi Shadrack Mukendi</p>
-              <p><strong>Profile:</strong> Aspiring Full Stack Web Developer</p>
-              <p><strong>Phone:</strong> 000 000 0000</p>
-              <p><strong>Email:</strong> kazadishadrackmukendi@gmail.com</p>
+              <ul class="contact-details list-unstyled small mb-4">
+                <li class="d-flex align-items-center gap-2 mb-2">
+                  <i class="bi bi-person-fill accent-icon"></i>
+                  <span><strong>Name:</strong> Alex Rivera</span>
+                </li>
+                <li class="d-flex align-items-center gap-2 mb-2">
+                  <i class="bi bi-briefcase-fill accent-icon"></i>
+                  <span><strong>Profile:</strong> Web Developer</span>
+                </li>
+                <li class="d-flex align-items-center gap-2 mb-2">
+                  <i class="bi bi-telephone-fill accent-icon"></i>
+                  <span><strong>Phone:</strong> +27 82 000 1234</span>
+                </li>
+                <li class="d-flex align-items-center gap-2">
+                  <i class="bi bi-envelope-fill accent-icon"></i>
+                  <span><strong>Email:</strong> alex@example.com</span>
+                </li>
+              </ul>
 
-              <h5 class="mt-4">Skills</h5>
-              <div class="skills-list">
-                <span class="badge text-bg-primary">HTML</span>
-                <span class="badge text-bg-primary">CSS</span>
-                <span class="badge text-bg-primary">Bootstrap</span>
-                <span class="badge text-bg-primary">JavaScript</span>
-                <span class="badge text-bg-primary">Git</span>
-                <span class="badge text-bg-primary">GitHub</span>
-                <span class="badge text-bg-primary">Responsive Design</span>
+              <div>
+                <p class="small fw-semibold text-uppercase letter-spaced mb-2">Skills</p>
+                <div class="d-flex flex-wrap gap-2">
+                  <span class="badge skill-badge">HTML5</span>
+                  <span class="badge skill-badge">CSS3</span>
+                  <span class="badge skill-badge">Bootstrap</span>
+                  <span class="badge skill-badge">JavaScript</span>
+                  <span class="badge skill-badge">Git</span>
+                  <span class="badge skill-badge">Figma</span>
+                  <span class="badge skill-badge">Responsive</span>
+                  <span class="badge skill-badge">UI/UX</span>
+                </div>
               </div>
             </div>
 
-            <div class="col-md-7">
-              <span class="highlight-label">About me</span>
-              <p class="about-text mt-3">
-                I am an aspiring full stack web developer based in Johannesburg, passionate about building clean, responsive, and user-friendly websites that look great and provide a meaningful user experience. Over the past year, I have built a strong foundation in HTML, CSS, Bootstrap, and web development principles while working on projects such as landing pages, responsive websites, and portfolio designs. I enjoy solving problems, learning new technologies, and continuously improving my work through feedback and hands-on experience. I believe great design solves real problems and that every element on a page should serve a purpose. When I'm not coding, I enjoy exploring new tools, learning from open-source projects, and supporting others who are starting their journey in technology. My goal is to grow into a confident full stack developer who creates impactful digital solutions for real users and businesses.
+            <!-- Right column -->
+            <div class="col-lg-8 about-right p-4 p-lg-5 d-flex flex-column justify-content-center">
+              <span class="section-label d-inline-block mb-3" id="about-heading">About Me</span>
+              <h3 class="h2 fw-bold mb-4">Turning ideas into <em>polished</em> digital experiences.</h3>
+              <p class="about-body">
+                I'm a web developer based in Johannesburg, passionate about crafting interfaces that feel
+                as good as they look. I've spent the past year building a solid foundation in HTML, CSS,
+                and Bootstrap while taking on freelance projects that range from landing pages to
+                fully-responsive web apps. I believe great design solves a real problem — and that every
+                pixel should earn its place on the screen. When I'm not coding, you'll find me sketching
+                UI concepts, exploring open-source tools, or mentoring aspiring developers in my community.
               </p>
+              <div class="row g-3 mt-2">
+                <div class="col-6 col-md-3">
+                  <div class="stat-card text-center p-3 rounded-3">
+                    <p class="stat-number fw-black mb-0">6+</p>
+                    <p class="stat-label small mb-0">Projects</p>
+                  </div>
+                </div>
+                <div class="col-6 col-md-3">
+                  <div class="stat-card text-center p-3 rounded-3">
+                    <p class="stat-number fw-black mb-0">1yr</p>
+                    <p class="stat-label small mb-0">Experience</p>
+                  </div>
+                </div>
+                <div class="col-6 col-md-3">
+                  <div class="stat-card text-center p-3 rounded-3">
+                    <p class="stat-number fw-black mb-0">8+</p>
+                    <p class="stat-label small mb-0">Technologies</p>
+                  </div>
+                </div>
+                <div class="col-6 col-md-3">
+                  <div class="stat-card text-center p-3 rounded-3">
+                    <p class="stat-number fw-black mb-0">3</p>
+                    <p class="stat-label small mb-0">Happy Clients</p>
+                  </div>
+                </div>
+              </div>
             </div>
 
           </div>
@@ -83,95 +144,153 @@
       </div>
     </section>
 
-    <!-- Projects -->
-    <section id="projects" class="section-padding projects-section">
-      <div class="container">
+    <!-- ===== PROJECTS ===== -->
+    <section class="projects-section py-5" id="projects" aria-labelledby="projects-heading">
+      <div class="container py-4">
         <div class="text-center mb-5">
-          <span class="highlight-label">Projects</span>
-          <h2 class="mt-3">My recent work</h2>
+          <span class="section-label d-inline-block mb-3" id="projects-heading">My Work</span>
+          <h2 class="display-5 fw-black">Featured <em>Projects</em></h2>
+          <p class="text-muted mt-2">A selection of things I've built — real and imagined.</p>
         </div>
 
-        <div class="row g-4">
+        <div class="row g-4 row-cols-1 row-cols-md-2 row-cols-lg-3">
 
-          <div class="col-sm-12 col-md-6 col-lg-4">
-            <article class="project-card">
-              <img src="images/tesla.jpg" alt="Tesla landing page project screenshot">
-              <div class="project-body">
-                <h5>Tesla Landing Page</h5>
-                <p>Built with HTML and CSS</p>
-                <div class="project-buttons">
-                  <a href="#" class="btn btn-primary">View Website</a>
-                  <a href="#" class="btn btn-outline-primary"><i class="bi bi-code-slash"></i></a>
+          <!-- Tesla -->
+          <div class="col">
+            <article class="project-card card border-0 shadow h-100 rounded-4 overflow-hidden">
+              <div class="card-img-wrap">
+                <img src="https://images.unsplash.com/photo-1617788138017-80ad40651399?w=600&h=340&fit=crop"
+                     class="card-img-top" alt="Tesla electric vehicle on open road" />
+              </div>
+              <div class="card-body d-flex flex-column p-4">
+                <span class="project-tag small mb-2">Built with HTML &amp; CSS</span>
+                <h3 class="card-title h5 fw-bold mb-1">Tesla Clone</h3>
+                <p class="card-text small text-muted flex-grow-1">
+                  A pixel-perfect recreation of Tesla's marketing landing page, featuring full-screen hero sections and smooth scroll navigation.
+                </p>
+                <div class="d-flex gap-2 mt-3">
+                  <a href="https://www.tesla.com" target="_blank" rel="noopener noreferrer"
+                     class="btn btn-project-primary btn-sm flex-grow-1">View Website</a>
+                  <a href="#projects" class="btn btn-project-outline btn-sm" aria-label="View Tesla clone source code">
+                    <i class="bi bi-code-slash"></i>
+                  </a>
                 </div>
               </div>
             </article>
           </div>
 
-          <div class="col-sm-12 col-md-6 col-lg-4">
-            <article class="project-card">
-              <img src="images/netflix.jpg" alt="Netflix landing page project screenshot">
-              <div class="project-body">
-                <h5>Netflix Landing Page</h5>
-                <p>Built with HTML and CSS</p>
-                <div class="project-buttons">
-                  <a href="#" class="btn btn-primary">View Website</a>
-                  <a href="#" class="btn btn-outline-primary"><i class="bi bi-code-slash"></i></a>
+          <!-- Netflix -->
+          <div class="col">
+            <article class="project-card card border-0 shadow h-100 rounded-4 overflow-hidden">
+              <div class="card-img-wrap">
+                <img src="https://images.unsplash.com/photo-1574375927938-d5a98e8ffe85?w=600&h=340&fit=crop"
+                     class="card-img-top" alt="Netflix streaming service interface on a screen" />
+              </div>
+              <div class="card-body d-flex flex-column p-4">
+                <span class="project-tag small mb-2">Built with HTML &amp; CSS</span>
+                <h3 class="card-title h5 fw-bold mb-1">Netflix Clone</h3>
+                <p class="card-text small text-muted flex-grow-1">
+                  A replica of Netflix's home and sign-in pages, capturing the dark theme, gradient overlays, and responsive card rows.
+                </p>
+                <div class="d-flex gap-2 mt-3">
+                  <a href="https://www.netflix.com" target="_blank" rel="noopener noreferrer"
+                     class="btn btn-project-primary btn-sm flex-grow-1">View Website</a>
+                  <a href="#projects" class="btn btn-project-outline btn-sm" aria-label="View Netflix clone source code">
+                    <i class="bi bi-code-slash"></i>
+                  </a>
                 </div>
               </div>
             </article>
           </div>
 
-          <div class="col-sm-12 col-md-6 col-lg-4">
-            <article class="project-card">
-              <img src="images/youtube.jpg" alt="YouTube clone project screenshot">
-              <div class="project-body">
-                <h5>YouTube Clone</h5>
-                <p>Built with HTML and CSS</p>
-                <div class="project-buttons">
-                  <a href="#" class="btn btn-primary">View Website</a>
-                  <a href="#" class="btn btn-outline-primary"><i class="bi bi-code-slash"></i></a>
+          <!-- YouTube -->
+          <div class="col">
+            <article class="project-card card border-0 shadow h-100 rounded-4 overflow-hidden">
+              <div class="card-img-wrap">
+                <img src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=600&h=340&fit=crop"
+                     class="card-img-top" alt="YouTube video platform interface on laptop" />
+              </div>
+              <div class="card-body d-flex flex-column p-4">
+                <span class="project-tag small mb-2">Built with HTML &amp; CSS</span>
+                <h3 class="card-title h5 fw-bold mb-1">YouTube Clone</h3>
+                <p class="card-text small text-muted flex-grow-1">
+                  Recreated YouTube's homepage grid including the sidebar, header search bar, and responsive video thumbnail layout.
+                </p>
+                <div class="d-flex gap-2 mt-3">
+                  <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer"
+                     class="btn btn-project-primary btn-sm flex-grow-1">View Website</a>
+                  <a href="#projects" class="btn btn-project-outline btn-sm" aria-label="View YouTube clone source code">
+                    <i class="bi bi-code-slash"></i>
+                  </a>
                 </div>
               </div>
             </article>
           </div>
 
-          <div class="col-sm-12 col-md-6 col-lg-4">
-            <article class="project-card">
-              <img src="images/portfolio.jpg" alt="Portfolio website project screenshot">
-              <div class="project-body">
-                <h5>Portfolio Website</h5>
-                <p>Built with Bootstrap</p>
-                <div class="project-buttons">
-                  <a href="#" class="btn btn-primary">View Website</a>
-                  <a href="#" class="btn btn-outline-primary"><i class="bi bi-code-slash"></i></a>
+          <!-- Weather App -->
+          <div class="col">
+            <article class="project-card card border-0 shadow h-100 rounded-4 overflow-hidden">
+              <div class="card-img-wrap">
+                <img src="https://images.unsplash.com/photo-1504608524841-42584120d693?w=600&h=340&fit=crop"
+                     class="card-img-top" alt="Dramatic storm clouds weather forecast concept" />
+              </div>
+              <div class="card-body d-flex flex-column p-4">
+                <span class="project-tag small mb-2">Built with HTML, CSS &amp; Bootstrap</span>
+                <h3 class="card-title h5 fw-bold mb-1">Weather Dashboard</h3>
+                <p class="card-text small text-muted flex-grow-1">
+                  A responsive weather UI concept with city search, animated condition icons, and a 5-day forecast card grid.
+                </p>
+                <div class="d-flex gap-2 mt-3">
+                  <a href="#projects" class="btn btn-project-primary btn-sm flex-grow-1">View Website</a>
+                  <a href="#projects" class="btn btn-project-outline btn-sm" aria-label="View Weather Dashboard source code">
+                    <i class="bi bi-code-slash"></i>
+                  </a>
                 </div>
               </div>
             </article>
           </div>
 
-          <div class="col-sm-12 col-md-6 col-lg-4">
-            <article class="project-card">
-              <img src="images/food.jpg" alt="Food delivery website project screenshot">
-              <div class="project-body">
-                <h5>Food Delivery Website</h5>
-                <p>Built with HTML, CSS and Bootstrap</p>
-                <div class="project-buttons">
-                  <a href="#" class="btn btn-primary">View Website</a>
-                  <a href="#" class="btn btn-outline-primary"><i class="bi bi-code-slash"></i></a>
+          <!-- Recipe Finder -->
+          <div class="col">
+            <article class="project-card card border-0 shadow h-100 rounded-4 overflow-hidden">
+              <div class="card-img-wrap">
+                <img src="https://images.unsplash.com/photo-1466637574441-749b8f19452f?w=600&h=340&fit=crop"
+                     class="card-img-top" alt="Colourful fresh ingredients on a wooden board" />
+              </div>
+              <div class="card-body d-flex flex-column p-4">
+                <span class="project-tag small mb-2">Built with HTML &amp; CSS</span>
+                <h3 class="card-title h5 fw-bold mb-1">Recipe Finder UI</h3>
+                <p class="card-text small text-muted flex-grow-1">
+                  A clean recipe browsing interface featuring filterable categories, card-based recipe listings, and a print-friendly detail page.
+                </p>
+                <div class="d-flex gap-2 mt-3">
+                  <a href="#projects" class="btn btn-project-primary btn-sm flex-grow-1">View Website</a>
+                  <a href="#projects" class="btn btn-project-outline btn-sm" aria-label="View Recipe Finder source code">
+                    <i class="bi bi-code-slash"></i>
+                  </a>
                 </div>
               </div>
             </article>
           </div>
 
-          <div class="col-sm-12 col-md-6 col-lg-4">
-            <article class="project-card">
-              <img src="images/weather.jpg" alt="Weather app project screenshot">
-              <div class="project-body">
-                <h5>Weather App</h5>
-                <p>Built with HTML, CSS and JavaScript</p>
-                <div class="project-buttons">
-                  <a href="#" class="btn btn-primary">View Website</a>
-                  <a href="#" class="btn btn-outline-primary"><i class="bi bi-code-slash"></i></a>
+          <!-- Portfolio v1 -->
+          <div class="col">
+            <article class="project-card card border-0 shadow h-100 rounded-4 overflow-hidden">
+              <div class="card-img-wrap">
+                <img src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=600&h=340&fit=crop"
+                     class="card-img-top" alt="Designer working on portfolio wireframes on laptop" />
+              </div>
+              <div class="card-body d-flex flex-column p-4">
+                <span class="project-tag small mb-2">Built with HTML, CSS &amp; Bootstrap</span>
+                <h3 class="card-title h5 fw-bold mb-1">Portfolio v1</h3>
+                <p class="card-text small text-muted flex-grow-1">
+                  My first personal portfolio — a single-page Bootstrap site that kicked off my career in web development. This very page is v2.
+                </p>
+                <div class="d-flex gap-2 mt-3">
+                  <a href="#projects" class="btn btn-project-primary btn-sm flex-grow-1">View Website</a>
+                  <a href="#projects" class="btn btn-project-outline btn-sm" aria-label="View Portfolio v1 source code">
+                    <i class="bi bi-code-slash"></i>
+                  </a>
                 </div>
               </div>
             </article>
@@ -181,50 +300,70 @@
       </div>
     </section>
 
-    <!-- Contact -->
-    <section id="contact" class="section-padding">
-      <div class="container">
-        <div class="text-center mb-4">
-          <span class="highlight-label">Let’s connect</span>
-          <p class="mt-3">Have a project, opportunity or feedback? Send me a message.</p>
-
-          <div class="social-icons">
-            <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
-            <a href="https://github.com/KMukendi10" aria-label="GitHub"><i class="bi bi-github"></i></a>
-            <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
-          </div>
+    <!-- ===== CONTACT ===== -->
+    <section class="contact-section py-5" id="contact" aria-labelledby="contact-heading">
+      <div class="container py-4">
+        <div class="text-center mb-5">
+          <span class="section-label d-inline-block mb-3" id="contact-heading">Get In Touch</span>
+          <h2 class="display-5 fw-black">Let's <em>connect</em></h2>
+          <p class="text-muted mt-2">Have a project in mind or just want to say hello? My inbox is always open.</p>
         </div>
 
-        <form class="contact-form mx-auto">
-          <div class="mb-3">
-            <label for="email" class="form-label">Email Address</label>
-            <input type="email" id="email" class="form-control" required>
-          </div>
+        <!-- Social icons -->
+        <div class="d-flex justify-content-center gap-4 mb-5">
+          <a href="#contact" class="social-icon" aria-label="Instagram profile">
+            <i class="bi bi-instagram"></i>
+          </a>
+          <a href="#contact" class="social-icon" aria-label="GitHub profile">
+            <i class="bi bi-github"></i>
+          </a>
+          <a href="#contact" class="social-icon" aria-label="LinkedIn profile">
+            <i class="bi bi-linkedin"></i>
+          </a>
+        </div>
 
-          <div class="mb-3">
-            <label for="name" class="form-label">Name</label>
-            <input type="text" id="name" class="form-control" required>
+        <!-- Contact form -->
+        <div class="row justify-content-center">
+          <div class="col-lg-7">
+            <div class="contact-card card border-0 shadow-lg rounded-4 p-4 p-md-5">
+              <div class="mb-3">
+                <label for="emailAddress" class="form-label fw-semibold">Email Address</label>
+                <input type="email" class="form-control contact-input" id="emailAddress"
+                       placeholder="you@example.com" required autocomplete="email" />
+              </div>
+              <div class="mb-3">
+                <label for="fullName" class="form-label fw-semibold">Name</label>
+                <input type="text" class="form-control contact-input" id="fullName"
+                       placeholder="Your full name" required autocomplete="name" />
+              </div>
+              <div class="mb-3">
+                <label for="subject" class="form-label fw-semibold">Subject</label>
+                <input type="text" class="form-control contact-input" id="subject"
+                       placeholder="What's this about?" required />
+              </div>
+              <div class="mb-4">
+                <label for="message" class="form-label fw-semibold">Message</label>
+                <textarea class="form-control contact-input" id="message" rows="5"
+                          placeholder="Tell me about your project or just say hi…" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-submit w-100">
+                Send Message <i class="bi bi-send ms-2"></i>
+              </button>
+            </div>
           </div>
-
-          <div class="mb-3">
-            <label for="subject" class="form-label">Subject</label>
-            <input type="text" id="subject" class="form-control" required>
-          </div>
-
-          <div class="mb-3">
-            <label for="message" class="form-label">Message</label>
-            <textarea id="message" rows="5" class="form-control" required></textarea>
-          </div>
-
-          <button type="submit" class="btn btn-primary w-100">Submit</button>
-        </form>
+        </div>
       </div>
     </section>
 
   </main>
 
-  <footer>
-    <p>Developed by Kazadi Shadrack Mukendi using Bootstrap, for portfolio purposes.</p>
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer py-4" role="contentinfo">
+    <div class="container text-center">
+      <p class="mb-0 small footer-text">
+        Developed by <strong>Alex Rivera</strong> using Bootstrap, for portfolio purposes.
+      </p>
+    </div>
   </footer>
 
 </body>
