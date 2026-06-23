@@ -92,7 +92,7 @@ body {
 }
 
 .hero-content p {
-  color: #f1f1f1;
+  color: #f1f1f2;
   font-size: clamp(1.1rem, 3vw, 2rem);
 }
 
