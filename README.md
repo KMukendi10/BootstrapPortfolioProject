@@ -9,7 +9,6 @@ This is my personal portfolio website built to showcase my skills, projects, and
 * Responsive design for desktop, tablet, and mobile devices
 * Professional hero section with introduction
 * About Me section with personal and professional background
-* Skills section highlighting technologies learned in Block 1
 * Projects section featuring completed web development projects
 * Contact section with social media links and contact form
 * Accessibility features including skip navigation link
@@ -20,8 +19,7 @@ This is my personal portfolio website built to showcase my skills, projects, and
 
 * HTML
 * CSS
-* Bootstrap 5
-* Bootstrap Icons
+* Bootstrap
 
 ## Featured Projects
 
