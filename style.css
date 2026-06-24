@@ -38,9 +38,6 @@ em {
   background: rgba(15, 23, 42, 0.94);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
-}
-
-.site-header .navbar {
   min-height: 70px;
 }
 
