@@ -12,7 +12,6 @@ This is my personal portfolio website built to showcase my skills, projects, and
 * Projects section featuring completed web development projects
 * Contact section with social media links and contact form
 * Accessibility features including skip navigation link
-* Automatic dark mode support based on system preferences
 * Print-friendly résumé view
 
 ## Technologies Used
