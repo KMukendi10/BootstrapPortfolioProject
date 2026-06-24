@@ -72,7 +72,7 @@ em    { font-style: italic; color: var(--accent); }
 .hero-section {
   position: relative;
   min-height: 100dvh;
-  background-image: url('https://images.unsplash.com/photo-1518770660439-4636190af475?w=1920&q=80');
+  background-image: url('./Assets/HeroImg.jpg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
