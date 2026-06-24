@@ -69,13 +69,5 @@ portfolio/
 
 ---
 
-## Image Credits
-
-All card images are inline SVG placeholders generated in CSS/HTML — no external image requests are made. To swap in your own photos, replace the `src="data:image/svg+xml,..."` values with your image file paths and update the `alt` text accordingly.
-
-Profile photo: replace the SVG placeholder with `./Assets/Kazadi Profile Pic.png` (your existing asset).
-
----
-
 ## Author
 Kazadi Mukendi
