@@ -1,7 +1,5 @@
 /* ============================================================
    Kazadi Mukendi — Bootstrap Portfolio
-   Palette: deep violet (#6c63ff) + near-black + clean white
-   Fonts: system stack (no external requests)
    ============================================================ */
 
 :root {
@@ -23,7 +21,6 @@ html  { scroll-behavior: smooth; }
 body  { background: var(--bg); color: var(--ink); line-height: 1.65; }
 em    { font-style: italic; color: var(--accent); }
 
-/* ---- Skip link ---- */
 .skip-link {
   position: absolute; top: -999px; left: 1rem;
   background: var(--accent); color: #fff;
@@ -121,15 +118,20 @@ em    { font-style: italic; color: var(--accent); }
 .btn-hero-solid:focus-visible { outline: 3px solid var(--accent-light); outline-offset: 3px; }
 
 .btn-hero-outline {
-  background: transparent; color: #fff;
+  background: transparent;
+  color: #fff;
   border: 2px solid rgba(255,255,255,.55);
-  padding: .7rem 1.9rem; border-radius: 999px;
-  font-weight: 600; font-size: .93rem;
+  padding: .7rem 1.9rem;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: .93rem;
   transition: border-color .22s, background .22s, transform .18s;
 }
 .btn-hero-outline:hover, .btn-hero-outline:focus {
-  border-color: #fff; background: rgba(255,255,255,.1);
-  color: #fff; transform: translateY(-2px);
+  border-color: #fff;
+  background: rgba(255,255,255,.1);
+  color: #fff;
+  transform: translateY(-2px);
 }
 .btn-hero-outline:focus-visible { outline: 3px solid #fff; outline-offset: 3px; }
 
@@ -137,10 +139,13 @@ em    { font-style: italic; color: var(--accent); }
    SECTION LABEL
    ============================================================ */
 .section-label {
-  background: var(--accent-bg); color: var(--accent);
-  font-size: .76rem; font-weight: 700;
-  letter-spacing: .14em; text-transform: uppercase;
-  padding: .28rem .88rem; border-radius: 999px;
+  color: var(--accent);
+  font-size: .76rem;
+  font-weight: 700;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  padding: .28rem .88rem;
+  border-radius: 999px;
 }
 
 /* ============================================================
@@ -190,7 +195,7 @@ em    { font-style: italic; color: var(--accent); }
   box-shadow: 0 20px 55px rgba(108,99,255,.16) !important;
 }
 
-.card-img-wrap { height: 200px; overflow: hidden; }
+.card-img-wrap { height: 160px; overflow: hidden; }
 .card-img-wrap img {
   width: 100%; height: 100%; object-fit: cover;
   transition: transform .4s ease;
