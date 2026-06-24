@@ -3,23 +3,20 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Alex Rivera — Portfolio</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <title>Kazadi Mukendi | Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <!-- Skip to content -->
-  <a href="#main-content" class="skip-link">Skip to main content</a>
+  <!-- Skip link -->
+  <a href="#main" class="skip-link">Skip to main content</a>
 
   <!-- ===== NAVBAR ===== -->
-  <nav class="navbar navbar-expand-lg navbar-dark fixed-top py-3" id="mainNav" aria-label="Primary navigation">
-    <div class="container">
-      <a class="navbar-brand fw-bold logo-text" href="#hero">&#60;AR/&#62;</a>
+  <header class="fixed-top site-header" role="banner">
+    <nav class="navbar navbar-expand-lg navbar-dark container-fluid px-4 py-2" aria-label="Primary navigation">
+      <a class="navbar-brand logo" href="#hero">✳ Portfolio ✳</a>
       <button class="navbar-toggler border-0" type="button"
               data-bs-toggle="collapse" data-bs-target="#navMenu"
               aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
@@ -27,89 +24,92 @@
       </button>
       <div class="collapse navbar-collapse justify-content-end" id="navMenu">
         <ul class="navbar-nav gap-1">
-          <li class="nav-item"><a class="nav-link active" href="#hero" aria-current="page">Home</a></li>
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="#hero">Home</a></li>
           <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
           <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
           <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
         </ul>
       </div>
-    </div>
-  </nav>
+    </nav>
+  </header>
 
-  <main id="main-content">
+  <main id="main">
 
     <!-- ===== HERO ===== -->
-    <header class="hero-section d-flex align-items-center justify-content-center text-center" id="hero">
-      <div class="hero-overlay"></div>
-      <div class="hero-content position-relative z-1">
-        <p class="hero-eyebrow text-uppercase letter-spaced mb-3">Welcome to my world</p>
-        <h1 class="hero-headline display-1 fw-black mb-3">I am <span class="hero-name">Alex Rivera</span>.</h1>
-        <p class="hero-sub fs-4 fw-light">Web Developer &amp; Entrepreneur</p>
-        <a href="#projects" class="btn btn-hero mt-4">View My Work <i class="bi bi-arrow-down ms-2"></i></a>
+    <section class="hero-section d-flex align-items-center justify-content-center text-center text-white" id="hero">
+      <div class="hero-overlay" aria-hidden="true"></div>
+      <div class="hero-content position-relative">
+        <p class="hero-eyebrow text-uppercase mb-3">Welcome to my portfolio</p>
+        <h1 class="display-1 fw-black mb-3">I am <span class="hero-name">Kazadi Mukendi</span>.</h1>
+        <p class="lead fw-light mb-4">Aspiring Full Stack Developer &amp; Problem Solver</p>
+        <div class="d-flex gap-3 justify-content-center flex-wrap">
+          <a href="#about" class="btn btn-hero-outline">Learn More</a>
+          <a href="#projects" class="btn btn-hero-solid">View Projects</a>
+        </div>
       </div>
-    </header>
+    </section>
 
-    <!-- ===== ABOUT ME ===== -->
-    <section class="about-section py-5" id="about" aria-labelledby="about-heading">
-      <div class="container py-4">
-        <div class="card about-card border-0 shadow-lg rounded-4 overflow-hidden">
+    <!-- ===== ABOUT ===== -->
+    <section class="py-5 bg-light" id="about" aria-labelledby="about-heading">
+      <div class="container py-3">
+        <div class="card about-card border-0 shadow rounded-4 overflow-hidden">
           <div class="row g-0">
 
-            <!-- Left column -->
+            <!-- Left -->
             <div class="col-lg-4 about-left p-4 p-lg-5">
               <div class="text-center mb-4">
-                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=300&fit=crop&crop=face"
-                     alt="Alex Rivera profile photo"
+                <!-- SVG avatar placeholder -->
+                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200' viewBox='0 0 200 200'%3E%3Crect width='200' height='200' fill='%23e9ecef'/%3E%3Ccircle cx='100' cy='72' r='38' fill='%236c757d'/%3E%3Cellipse cx='100' cy='175' rx='60' ry='45' fill='%236c757d'/%3E%3C/svg%3E"
+                     alt="Kazadi Mukendi profile photo"
                      class="profile-img rounded-circle mb-3" />
-                <h2 class="h5 fw-bold mb-0">Alex Rivera</h2>
-                <p class="text-muted small">Web Developer</p>
+                <h2 class="h5 fw-bold mb-0">Kazadi Mukendi</h2>
+                <p class="text-muted small">Full Stack Developer</p>
               </div>
 
-              <ul class="contact-details list-unstyled small mb-4">
-                <li class="d-flex align-items-center gap-2 mb-2">
-                  <i class="bi bi-person-fill accent-icon"></i>
-                  <span><strong>Name:</strong> Alex Rivera</span>
+              <ul class="list-unstyled small mb-4">
+                <li class="d-flex align-items-start gap-2 mb-2">
+                  <i class="bi bi-person-fill accent-icon mt-1"></i>
+                  <span><strong>Name:</strong> Kazadi Mukendi</span>
                 </li>
-                <li class="d-flex align-items-center gap-2 mb-2">
-                  <i class="bi bi-briefcase-fill accent-icon"></i>
-                  <span><strong>Profile:</strong> Web Developer</span>
+                <li class="d-flex align-items-start gap-2 mb-2">
+                  <i class="bi bi-briefcase-fill accent-icon mt-1"></i>
+                  <span><strong>Profile:</strong> Full Stack Developer</span>
                 </li>
-                <li class="d-flex align-items-center gap-2 mb-2">
-                  <i class="bi bi-telephone-fill accent-icon"></i>
-                  <span><strong>Phone:</strong> +27 82 000 1234</span>
+                <li class="d-flex align-items-start gap-2 mb-2">
+                  <i class="bi bi-telephone-fill accent-icon mt-1"></i>
+                  <span><strong>Phone:</strong> +27 68 125 2703</span>
                 </li>
-                <li class="d-flex align-items-center gap-2">
-                  <i class="bi bi-envelope-fill accent-icon"></i>
-                  <span><strong>Email:</strong> alex@example.com</span>
+                <li class="d-flex align-items-start gap-2">
+                  <i class="bi bi-envelope-fill accent-icon mt-1"></i>
+                  <span><strong>Email:</strong> kazadishadrackmukendi@gmail.com</span>
                 </li>
               </ul>
 
-              <div>
-                <p class="small fw-semibold text-uppercase letter-spaced mb-2">Skills</p>
-                <div class="d-flex flex-wrap gap-2">
-                  <span class="badge skill-badge">HTML5</span>
-                  <span class="badge skill-badge">CSS3</span>
-                  <span class="badge skill-badge">Bootstrap</span>
-                  <span class="badge skill-badge">JavaScript</span>
-                  <span class="badge skill-badge">Git</span>
-                  <span class="badge skill-badge">Figma</span>
-                  <span class="badge skill-badge">Responsive</span>
-                  <span class="badge skill-badge">UI/UX</span>
-                </div>
+              <p class="small fw-semibold text-uppercase skill-label mb-2">Skills</p>
+              <div class="d-flex flex-wrap gap-2">
+                <span class="badge skill-badge">HTML</span>
+                <span class="badge skill-badge">CSS</span>
+                <span class="badge skill-badge">Git</span>
+                <span class="badge skill-badge">JavaScript</span>
+                <span class="badge skill-badge">Bootstrap</span>
+                <span class="badge skill-badge">Responsive Design</span>
+                <span class="badge skill-badge">Problem Solving</span>
+                <span class="badge skill-badge">Flexbox &amp; Grid</span>
               </div>
             </div>
 
-            <!-- Right column -->
+            <!-- Right -->
             <div class="col-lg-8 about-right p-4 p-lg-5 d-flex flex-column justify-content-center">
               <span class="section-label d-inline-block mb-3" id="about-heading">About Me</span>
-              <h3 class="h2 fw-bold mb-4">Turning ideas into <em>polished</em> digital experiences.</h3>
+              <h3 class="h2 fw-bold mb-4">Engineering mindset.<br><em>Developer at heart.</em></h3>
               <p class="about-body">
-                I'm a web developer based in Johannesburg, passionate about crafting interfaces that feel
-                as good as they look. I've spent the past year building a solid foundation in HTML, CSS,
-                and Bootstrap while taking on freelance projects that range from landing pages to
-                fully-responsive web apps. I believe great design solves a real problem — and that every
-                pixel should earn its place on the screen. When I'm not coding, you'll find me sketching
-                UI concepts, exploring open-source tools, or mentoring aspiring developers in my community.
+                I'm an aspiring Full Stack Web Developer with a background in Mechanical Engineering.
+                I enjoy building modern, responsive websites and solving real-world problems through technology.
+                My engineering background brings strong problem-solving skills, attention to detail, and a
+                structured approach to every project. I have hands-on experience with HTML, CSS, JavaScript,
+                and Git, and I'm continuously learning new tools to sharpen my craft.
+                Outside of coding, I enjoy exploring new technologies and working on projects that challenge
+                me to think creatively.
               </p>
               <div class="row g-3 mt-2">
                 <div class="col-6 col-md-3">
@@ -120,8 +120,8 @@
                 </div>
                 <div class="col-6 col-md-3">
                   <div class="stat-card text-center p-3 rounded-3">
-                    <p class="stat-number fw-black mb-0">1yr</p>
-                    <p class="stat-label small mb-0">Experience</p>
+                    <p class="stat-number fw-black mb-0">3</p>
+                    <p class="stat-label small mb-0">Certificates</p>
                   </div>
                 </div>
                 <div class="col-6 col-md-3">
@@ -132,8 +132,8 @@
                 </div>
                 <div class="col-6 col-md-3">
                   <div class="stat-card text-center p-3 rounded-3">
-                    <p class="stat-number fw-black mb-0">3</p>
-                    <p class="stat-label small mb-0">Happy Clients</p>
+                    <p class="stat-number fw-black mb-0">BSc</p>
+                    <p class="stat-label small mb-0">Engineering</p>
                   </div>
                 </div>
               </div>
@@ -145,33 +145,34 @@
     </section>
 
     <!-- ===== PROJECTS ===== -->
-    <section class="projects-section py-5" id="projects" aria-labelledby="projects-heading">
-      <div class="container py-4">
+    <section class="py-5" id="projects" aria-labelledby="projects-heading">
+      <div class="container py-3">
         <div class="text-center mb-5">
           <span class="section-label d-inline-block mb-3" id="projects-heading">My Work</span>
           <h2 class="display-5 fw-black">Featured <em>Projects</em></h2>
-          <p class="text-muted mt-2">A selection of things I've built — real and imagined.</p>
+          <p class="text-muted mt-2">Real clones &amp; original builds from my learning journey.</p>
         </div>
 
-        <div class="row g-4 row-cols-1 row-cols-md-2 row-cols-lg-3">
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
 
           <!-- Tesla -->
           <div class="col">
             <article class="project-card card border-0 shadow h-100 rounded-4 overflow-hidden">
               <div class="card-img-wrap">
-                <img src="https://images.unsplash.com/photo-1617788138017-80ad40651399?w=600&h=340&fit=crop"
-                     class="card-img-top" alt="Tesla electric vehicle on open road" />
+                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='600' height='340' viewBox='0 0 600 340'%3E%3Crect width='600' height='340' fill='%230a0a0a'/%3E%3Ctext x='300' y='185' font-family='Arial Black,sans-serif' font-size='64' font-weight='900' fill='%23cc0000' text-anchor='middle'%3ETESLA%3C/text%3E%3Crect x='200' y='210' width='200' height='3' rx='2' fill='%23cc0000' opacity='.4'/%3E%3C/svg%3E"
+                     class="card-img-top" alt="Tesla landing page clone" />
               </div>
               <div class="card-body d-flex flex-column p-4">
-                <span class="project-tag small mb-2">Built with HTML &amp; CSS</span>
-                <h3 class="card-title h5 fw-bold mb-1">Tesla Clone</h3>
+                <span class="project-tag mb-1">Built with HTML &amp; CSS</span>
+                <h3 class="card-title h5 fw-bold mb-1">Tesla Landing Page</h3>
                 <p class="card-text small text-muted flex-grow-1">
-                  A pixel-perfect recreation of Tesla's marketing landing page, featuring full-screen hero sections and smooth scroll navigation.
+                  A pixel-faithful recreation of Tesla's marketing page featuring full-screen hero sections and smooth anchor navigation.
                 </p>
                 <div class="d-flex gap-2 mt-3">
-                  <a href="https://www.tesla.com" target="_blank" rel="noopener noreferrer"
-                     class="btn btn-project-primary btn-sm flex-grow-1">View Website</a>
-                  <a href="#projects" class="btn btn-project-outline btn-sm" aria-label="View Tesla clone source code">
+                  <a href="https://kazadicars.netlify.app/" target="_blank" rel="noopener noreferrer"
+                     class="btn btn-proj-primary btn-sm flex-grow-1">View Website</a>
+                  <a href="https://github.com/KMukendi10/TeslaLandingPage.git" target="_blank" rel="noopener noreferrer"
+                     class="btn btn-proj-outline btn-sm" aria-label="Tesla clone source code">
                     <i class="bi bi-code-slash"></i>
                   </a>
                 </div>
@@ -183,19 +184,20 @@
           <div class="col">
             <article class="project-card card border-0 shadow h-100 rounded-4 overflow-hidden">
               <div class="card-img-wrap">
-                <img src="https://images.unsplash.com/photo-1574375927938-d5a98e8ffe85?w=600&h=340&fit=crop"
-                     class="card-img-top" alt="Netflix streaming service interface on a screen" />
+                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='600' height='340' viewBox='0 0 600 340'%3E%3Crect width='600' height='340' fill='%23141414'/%3E%3Ctext x='300' y='185' font-family='Arial Black,sans-serif' font-size='56' font-weight='900' fill='%23E50914' text-anchor='middle'%3ENETFLIX%3C/text%3E%3C/svg%3E"
+                     class="card-img-top" alt="Netflix landing page clone" />
               </div>
               <div class="card-body d-flex flex-column p-4">
-                <span class="project-tag small mb-2">Built with HTML &amp; CSS</span>
-                <h3 class="card-title h5 fw-bold mb-1">Netflix Clone</h3>
+                <span class="project-tag mb-1">Built with HTML &amp; CSS</span>
+                <h3 class="card-title h5 fw-bold mb-1">Netflix Landing Page</h3>
                 <p class="card-text small text-muted flex-grow-1">
-                  A replica of Netflix's home and sign-in pages, capturing the dark theme, gradient overlays, and responsive card rows.
+                  Recreated Netflix's homepage including the hero banner, feature highlights, FAQ accordion, and dark-themed footer.
                 </p>
                 <div class="d-flex gap-2 mt-3">
-                  <a href="https://www.netflix.com" target="_blank" rel="noopener noreferrer"
-                     class="btn btn-project-primary btn-sm flex-grow-1">View Website</a>
-                  <a href="#projects" class="btn btn-project-outline btn-sm" aria-label="View Netflix clone source code">
+                  <a href="https://kazadimoviesite.netlify.app/" target="_blank" rel="noopener noreferrer"
+                     class="btn btn-proj-primary btn-sm flex-grow-1">View Website</a>
+                  <a href="https://github.com/KMukendi10/netflixlandingpage.git" target="_blank" rel="noopener noreferrer"
+                     class="btn btn-proj-outline btn-sm" aria-label="Netflix clone source code">
                     <i class="bi bi-code-slash"></i>
                   </a>
                 </div>
@@ -207,19 +209,20 @@
           <div class="col">
             <article class="project-card card border-0 shadow h-100 rounded-4 overflow-hidden">
               <div class="card-img-wrap">
-                <img src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=600&h=340&fit=crop"
-                     class="card-img-top" alt="YouTube video platform interface on laptop" />
+                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='600' height='340' viewBox='0 0 600 340'%3E%3Crect width='600' height='340' fill='%23ffffff'/%3E%3Crect x='175' y='105' width='250' height='130' rx='24' fill='%23FF0000'/%3E%3Cpolygon points='262,135 262,215 358,175' fill='white'/%3E%3Ctext x='300' y='278' font-family='Arial,sans-serif' font-size='14' fill='%23606060' text-anchor='middle'%3EYouTube Clone%3C/text%3E%3C/svg%3E"
+                     class="card-img-top" alt="YouTube homepage clone" />
               </div>
               <div class="card-body d-flex flex-column p-4">
-                <span class="project-tag small mb-2">Built with HTML &amp; CSS</span>
-                <h3 class="card-title h5 fw-bold mb-1">YouTube Clone</h3>
+                <span class="project-tag mb-1">Built with HTML &amp; CSS</span>
+                <h3 class="card-title h5 fw-bold mb-1">YouTube Homepage</h3>
                 <p class="card-text small text-muted flex-grow-1">
-                  Recreated YouTube's homepage grid including the sidebar, header search bar, and responsive video thumbnail layout.
+                  Recreated YouTube's homepage grid with sidebar, search bar, and a fully responsive video thumbnail layout.
                 </p>
                 <div class="d-flex gap-2 mt-3">
-                  <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer"
-                     class="btn btn-project-primary btn-sm flex-grow-1">View Website</a>
-                  <a href="#projects" class="btn btn-project-outline btn-sm" aria-label="View YouTube clone source code">
+                  <a href="https://kazadiyoutubeclone.netlify.app/" target="_blank" rel="noopener noreferrer"
+                     class="btn btn-proj-primary btn-sm flex-grow-1">View Website</a>
+                  <a href="https://github.com/KMukendi10/ZaioYouTubeLandingPage.git" target="_blank" rel="noopener noreferrer"
+                     class="btn btn-proj-outline btn-sm" aria-label="YouTube clone source code">
                     <i class="bi bi-code-slash"></i>
                   </a>
                 </div>
@@ -227,22 +230,24 @@
             </article>
           </div>
 
-          <!-- Weather App -->
+          <!-- To-Do App -->
           <div class="col">
             <article class="project-card card border-0 shadow h-100 rounded-4 overflow-hidden">
               <div class="card-img-wrap">
-                <img src="https://images.unsplash.com/photo-1504608524841-42584120d693?w=600&h=340&fit=crop"
-                     class="card-img-top" alt="Dramatic storm clouds weather forecast concept" />
+                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='600' height='340' viewBox='0 0 600 340'%3E%3Crect width='600' height='340' fill='%23f0f4ff'/%3E%3Crect x='150' y='80' width='300' height='50' rx='10' fill='%236c63ff' opacity='.15'/%3E%3Ctext x='300' y='115' font-family='Arial,sans-serif' font-size='18' fill='%236c63ff' text-anchor='middle' font-weight='bold'%3E✓ To-Do App%3C/text%3E%3Crect x='160' y='150' width='240' height='16' rx='6' fill='%236c63ff' opacity='.3'/%3E%3Crect x='160' y='178' width='200' height='16' rx='6' fill='%236c63ff' opacity='.2'/%3E%3Crect x='160' y='206' width='260' height='16' rx='6' fill='%236c63ff' opacity='.25'/%3E%3Crect x='160' y='234' width='180' height='16' rx='6' fill='%236c63ff' opacity='.15'/%3E%3C/svg%3E"
+                     class="card-img-top" alt="To-do app built with HTML CSS and JavaScript" />
               </div>
               <div class="card-body d-flex flex-column p-4">
-                <span class="project-tag small mb-2">Built with HTML, CSS &amp; Bootstrap</span>
-                <h3 class="card-title h5 fw-bold mb-1">Weather Dashboard</h3>
+                <span class="project-tag mb-1">Built with HTML, CSS &amp; JavaScript</span>
+                <h3 class="card-title h5 fw-bold mb-1">To-Do App</h3>
                 <p class="card-text small text-muted flex-grow-1">
-                  A responsive weather UI concept with city search, animated condition icons, and a 5-day forecast card grid.
+                  An interactive task manager with add, complete, and delete functionality — my first hands-on JavaScript project.
                 </p>
                 <div class="d-flex gap-2 mt-3">
-                  <a href="#projects" class="btn btn-project-primary btn-sm flex-grow-1">View Website</a>
-                  <a href="#projects" class="btn btn-project-outline btn-sm" aria-label="View Weather Dashboard source code">
+                  <a href="https://kmukendi10.github.io/To-Do-App/" target="_blank" rel="noopener noreferrer"
+                     class="btn btn-proj-primary btn-sm flex-grow-1">View Website</a>
+                  <a href="https://github.com/KMukendi10/To-Do-App.git" target="_blank" rel="noopener noreferrer"
+                     class="btn btn-proj-outline btn-sm" aria-label="To-Do App source code">
                     <i class="bi bi-code-slash"></i>
                   </a>
                 </div>
@@ -250,22 +255,24 @@
             </article>
           </div>
 
-          <!-- Recipe Finder -->
+          <!-- Portfolio Website -->
           <div class="col">
             <article class="project-card card border-0 shadow h-100 rounded-4 overflow-hidden">
               <div class="card-img-wrap">
-                <img src="https://images.unsplash.com/photo-1466637574441-749b8f19452f?w=600&h=340&fit=crop"
-                     class="card-img-top" alt="Colourful fresh ingredients on a wooden board" />
+                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='600' height='340' viewBox='0 0 600 340'%3E%3Crect width='600' height='340' fill='%23f5f5ff'/%3E%3Crect x='100' y='65' width='400' height='230' rx='10' fill='white' stroke='%236c63ff' stroke-width='2' opacity='.6'/%3E%3Crect x='120' y='85' width='360' height='35' rx='6' fill='%236c63ff' opacity='.2'/%3E%3Crect x='120' y='138' width='170' height='13' rx='4' fill='%236c63ff' opacity='.3'/%3E%3Crect x='120' y='161' width='230' height='11' rx='4' fill='%23ccc' opacity='.5'/%3E%3Crect x='120' y='182' width='190' height='11' rx='4' fill='%23ccc' opacity='.4'/%3E%3Crect x='120' y='220' width='100' height='30' rx='15' fill='%236c63ff' opacity='.35'/%3E%3Ctext x='300' y='272' font-family='Arial,sans-serif' font-size='13' fill='%236c63ff' text-anchor='middle'%3EPortfolio Website%3C/text%3E%3C/svg%3E"
+                     class="card-img-top" alt="Personal portfolio website project" />
               </div>
               <div class="card-body d-flex flex-column p-4">
-                <span class="project-tag small mb-2">Built with HTML &amp; CSS</span>
-                <h3 class="card-title h5 fw-bold mb-1">Recipe Finder UI</h3>
+                <span class="project-tag mb-1">Built with HTML &amp; CSS</span>
+                <h3 class="card-title h5 fw-bold mb-1">Portfolio Website</h3>
                 <p class="card-text small text-muted flex-grow-1">
-                  A clean recipe browsing interface featuring filterable categories, card-based recipe listings, and a print-friendly detail page.
+                  Designed and built my personal portfolio from scratch — the foundation for showcasing my skills, projects, and growth as a developer.
                 </p>
                 <div class="d-flex gap-2 mt-3">
-                  <a href="#projects" class="btn btn-project-primary btn-sm flex-grow-1">View Website</a>
-                  <a href="#projects" class="btn btn-project-outline btn-sm" aria-label="View Recipe Finder source code">
+                  <a href="https://github.com/KMukendi10" target="_blank" rel="noopener noreferrer"
+                     class="btn btn-proj-primary btn-sm flex-grow-1">View Website</a>
+                  <a href="https://github.com/KMukendi10" target="_blank" rel="noopener noreferrer"
+                     class="btn btn-proj-outline btn-sm" aria-label="Portfolio source code">
                     <i class="bi bi-code-slash"></i>
                   </a>
                 </div>
@@ -273,22 +280,24 @@
             </article>
           </div>
 
-          <!-- Portfolio v1 -->
+          <!-- Responsive Design -->
           <div class="col">
             <article class="project-card card border-0 shadow h-100 rounded-4 overflow-hidden">
               <div class="card-img-wrap">
-                <img src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=600&h=340&fit=crop"
-                     class="card-img-top" alt="Designer working on portfolio wireframes on laptop" />
+                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='600' height='340' viewBox='0 0 600 340'%3E%3Crect width='600' height='340' fill='%23e8f5e9'/%3E%3Crect x='80' y='70' width='260' height='180' rx='12' fill='white' stroke='%2343a047' stroke-width='2'/%3E%3Crect x='370' y='100' width='150' height='240' rx='10' fill='white' stroke='%2343a047' stroke-width='2'/%3E%3Crect x='90' y='82' width='240' height='18' rx='4' fill='%2343a047' opacity='.25'/%3E%3Crect x='90' y='112' width='200' height='10' rx='3' fill='%23ccc' opacity='.6'/%3E%3Crect x='90' y='130' width='170' height='10' rx='3' fill='%23ccc' opacity='.5'/%3E%3Crect x='380' y='112' width='130' height='10' rx='3' fill='%23ccc' opacity='.5'/%3E%3Crect x='380' y='130' width='100' height='10' rx='3' fill='%23ccc' opacity='.4'/%3E%3Ctext x='300' y='306' font-family='Arial,sans-serif' font-size='13' fill='%2343a047' text-anchor='middle'%3EResponsive Design Practice%3C/text%3E%3C/svg%3E"
+                     class="card-img-top" alt="Responsive web design practice project" />
               </div>
               <div class="card-body d-flex flex-column p-4">
-                <span class="project-tag small mb-2">Built with HTML, CSS &amp; Bootstrap</span>
-                <h3 class="card-title h5 fw-bold mb-1">Portfolio v1</h3>
+                <span class="project-tag mb-1">Built with HTML &amp; CSS</span>
+                <h3 class="card-title h5 fw-bold mb-1">Responsive Design Study</h3>
                 <p class="card-text small text-muted flex-grow-1">
-                  My first personal portfolio — a single-page Bootstrap site that kicked off my career in web development. This very page is v2.
+                  A focused study in mobile-first layouts using CSS media queries, Flexbox, and Grid to deliver consistent UX across all screen sizes.
                 </p>
                 <div class="d-flex gap-2 mt-3">
-                  <a href="#projects" class="btn btn-project-primary btn-sm flex-grow-1">View Website</a>
-                  <a href="#projects" class="btn btn-project-outline btn-sm" aria-label="View Portfolio v1 source code">
+                  <a href="https://github.com/KMukendi10" target="_blank" rel="noopener noreferrer"
+                     class="btn btn-proj-primary btn-sm flex-grow-1">View Website</a>
+                  <a href="https://github.com/KMukendi10" target="_blank" rel="noopener noreferrer"
+                     class="btn btn-proj-outline btn-sm" aria-label="Responsive design source code">
                     <i class="bi bi-code-slash"></i>
                   </a>
                 </div>
@@ -301,28 +310,43 @@
     </section>
 
     <!-- ===== CONTACT ===== -->
-    <section class="contact-section py-5" id="contact" aria-labelledby="contact-heading">
-      <div class="container py-4">
+    <section class="py-5 bg-light" id="contact" aria-labelledby="contact-heading">
+      <div class="container py-3">
         <div class="text-center mb-5">
           <span class="section-label d-inline-block mb-3" id="contact-heading">Get In Touch</span>
           <h2 class="display-5 fw-black">Let's <em>connect</em></h2>
-          <p class="text-muted mt-2">Have a project in mind or just want to say hello? My inbox is always open.</p>
+          <p class="text-muted mt-2">Open to developer roles, collaborations, or anyone who needs a website built.</p>
         </div>
 
         <!-- Social icons -->
-        <div class="d-flex justify-content-center gap-4 mb-5">
-          <a href="#contact" class="social-icon" aria-label="Instagram profile">
+        <div class="d-flex justify-content-center flex-wrap gap-3 mb-5">
+          <a href="http://instagram.com/skm_shad" target="_blank" rel="noopener noreferrer"
+             class="social-icon" aria-label="Instagram profile">
             <i class="bi bi-instagram"></i>
           </a>
-          <a href="#contact" class="social-icon" aria-label="GitHub profile">
+          <a href="https://github.com/KMukendi10" target="_blank" rel="noopener noreferrer"
+             class="social-icon" aria-label="GitHub profile">
             <i class="bi bi-github"></i>
           </a>
-          <a href="#contact" class="social-icon" aria-label="LinkedIn profile">
+          <a href="https://linkedin.com/in/kazadi-mukendi-a69122371" target="_blank" rel="noopener noreferrer"
+             class="social-icon" aria-label="LinkedIn profile">
             <i class="bi bi-linkedin"></i>
+          </a>
+          <a href="https://m.facebook.com/SKM-Shad-105863354483945" target="_blank" rel="noopener noreferrer"
+             class="social-icon" aria-label="Facebook profile">
+            <i class="bi bi-facebook"></i>
+          </a>
+          <a href="https://x.com/skm_shad00" target="_blank" rel="noopener noreferrer"
+             class="social-icon" aria-label="Twitter / X profile">
+            <i class="bi bi-twitter-x"></i>
+          </a>
+          <a href="https://wa.me/+27681252703" target="_blank" rel="noopener noreferrer"
+             class="social-icon" aria-label="WhatsApp">
+            <i class="bi bi-whatsapp"></i>
           </a>
         </div>
 
-        <!-- Contact form -->
+        <!-- Form -->
         <div class="row justify-content-center">
           <div class="col-lg-7">
             <div class="contact-card card border-0 shadow-lg rounded-4 p-4 p-md-5">
@@ -360,8 +384,8 @@
   <!-- ===== FOOTER ===== -->
   <footer class="site-footer py-4" role="contentinfo">
     <div class="container text-center">
-      <p class="mb-0 small footer-text">
-        Developed by <strong>Alex Rivera</strong> using Bootstrap, for portfolio purposes.
+      <p class="mb-0 footer-text">
+        Developed by <strong>Kazadi Mukendi</strong> using Bootstrap, for portfolio purposes.
       </p>
     </div>
   </footer>
