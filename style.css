@@ -382,7 +382,7 @@ em {
   color: rgba(255,255,255,.85);
 }
 
-/* BONUS — Print résumé view (shows only About section) */
+/* BONUS — Print résumé view (Will show only About section) */
 @media print {
   @page {
     size: A4;
