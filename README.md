@@ -38,7 +38,7 @@ The goal of this portfolio is to showcase my web development skills, demonstrate
 
 ## GitHub Repository
 
-**Repository:** [https://github.com/KMukendi10]
+**Repository:** [https://github.com/KMukendi10/BootstrapPortfolioProject.git]
 
 ## Author
 
