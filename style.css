@@ -1,14 +1,14 @@
 /* Kazadi Mukendi — Bootstrap Portfolio */
 
 :root {
-  --accent:       #2e4cf1;
-  --accent-light: #3b7efa;
+  --accent:       #252c55;
+  --accent-light: #1b4594;
   --accent-bg:    #e0f2fe;
   --ink:          #0f172a;
   --muted:        #64748b;
   --surface:      #ffffff;
   --bg:           #f8fbff;
-  --hero-overlay: rgba(2, 6, 23, 0.74);
+  --hero-overlay: rgba(1, 4, 15, 0.80);
   --radius:       1rem;
   --shadow:       0 8px 40px rgba(0,0,0,0.09);
 }
